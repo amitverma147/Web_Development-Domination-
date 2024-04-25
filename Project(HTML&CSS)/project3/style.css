@@ -1,0 +1,112 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    padding: 0 50px;
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    
+}
+#nav-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0 18px;
+}
+#nav-2 h4{
+    font-size: 14px;
+    font-weight: 550;
+}
+#nav-2 span{
+    color: rgb(66, 66, 66);
+    margin-left: 25px;
+}
+#second{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 0 50px;
+}
+#second h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+#centre{
+    height: calc(100% - 140px);
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+#text-content{
+    height: 40%;
+    width: 100%;
+    /* background-color: bisque; */
+    display: flex;
+    text-wrap: nowrap;
+    overflow-x: auto;
+}
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 6px;
+}
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elem h1{
+    font-size: 140px;
+    font-weight: 300;
+}
+#img-content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+#img-content::-webkit-scrollbar{
+    display: none;
+}
+#img-content img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
