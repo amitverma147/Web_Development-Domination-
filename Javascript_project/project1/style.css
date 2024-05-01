@@ -10,22 +10,30 @@ html,body{
     height: 100%;
 }
 nav{
+    height: 4vw;
     width: 100%;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2vw 6vw;
+    /* background-color: yellowgreen; */
+    /* margin-bottom: 0.1px; */
 }
+
+#bottom-div{
+    /* background-color: blue; */
+}
+
 nav:hover #nav-bottom{
-    height: 100%;
-    bottom: -100%;
+    bottom: -190%;
+    height: 188%;
     
 }
 #nav-bottom{
     transition: all ease 0.65s;
     position: absolute;
-    background-color: #111;
+    /* background-color: red; */
     height: 0%;
     width: 79%;
     bottom:0%;
