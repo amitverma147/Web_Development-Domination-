@@ -57,6 +57,55 @@ h1 {
     height: 100%;
     background-image: linear-gradient(125deg,hsl(240deg 100% 20%) 0%,hsl(289deg 100% 21%) 25%,hsl(315deg 100% 27%) 41%,hsl(329deg 100% 36%) 54%,hsl(337deg 100% 43%) 65%,hsl(357deg 91% 59%) 75%,hsl(17deg 100% 59%) 83%,hsl(34deg 100% 53%) 90%,hsl(45deg 100% 50%) 96%,hsl(55deg 100% 50%) 100%);
 } */
+.Btn {
+  margin: 12px;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  cursor: pointer;
+  position: relative;
+  background-color: rgb(31, 31, 31);
+  overflow: hidden;
+  left:89%;
+}
+
+.svgIcon {
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.text {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 120px;
+  font-weight: 600;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+
+.Btn:hover {
+  width: 110px;
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+.Btn:hover .svgIcon {
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
 #todoapp {
   position: absolute;
   top: 50%;
@@ -140,9 +189,9 @@ h1 {
   text-align: center;
   color: rgb(184, 184, 184);
 }
-#tasks{
-    padding-top: 35px;
-    padding-left: 50px;
+#tasks {
+  padding-top: 35px;
+  padding-left: 50px;
 }
 
 ul li {
