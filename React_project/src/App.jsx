@@ -1,12 +1,11 @@
-import React from "react";
-import Card from "./components/Card";
+import React from 'react'
 
-function App(){
-    return(
-        <div>
-            <Card/>
-        </div>
-        
-    );
+function App() {
+  return (
+    <div>
+      <h3>Hello world, I am here to learn react</h3>
+    </div>
+  )
 }
-export default App;
+
+export default App
