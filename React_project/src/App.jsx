@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Card from './components/Card'
+import Nav from './components/Nav';
 
 function App() {
  const data=[
@@ -25,11 +26,13 @@ function App() {
 
   return (
     <>
+    <div><Nav/></div>
     <div className='w-full h-screen bg-zinc-300 flex gap-4 items-center justify-center'>
       {Val.map(( item,index)=>(
       <Card key={index} index={index} values={item} handleClick={handleFriendButton} />
       ))}
     </div>
+    
    
     </>
   )
